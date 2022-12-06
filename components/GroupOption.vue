@@ -3,7 +3,6 @@ const props = defineProps<{
   modelValue: boolean;
   name: string;
   tooltip?: string;
-  disabled?: boolean;
 }>();
 const emit = defineEmits(["update:modelValue"]);
 
@@ -18,22 +17,25 @@ const option = computed({
 </script>
 
 <template>
-  <label :for="name" :class="{ disabled: disabled }">
+  <label :for="name">
     <input
       type="checkbox"
       .id="name"
       .name="name"
       role="switch"
       v-model="option"
-      :disabled="disabled"
     />
     <slot />
+
     <span v-if="tooltip" :data-tooltip="tooltip"> ? </span>
   </label>
+  <div class="extra">
+    <slot name="extraOptions" />
+  </div>
 </template>
 
 <style>
-.disabled {
-  opacity: 0.6;
+.extra {
+  padding-left: 0.5rem;
 }
 </style>

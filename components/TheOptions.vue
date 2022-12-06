@@ -23,18 +23,20 @@ const options = computed({
       Basic option
     </RadioOption>
 
-    <RadioOption
+    <GroupOption
       v-model="options.resetLinkDecoration"
       name="resetLinkDecoration"
     >
       Remove anchor tag text decoration
-    </RadioOption>
-
-    <RadioOption
-      v-model="options.resetLinkDecorationWithoutClass"
-      name="resetLinkDecoration"
-    >
-      Only without class
-    </RadioOption>
+      <template #extraOptions>
+        <RadioOption
+          v-model="options.resetLinkDecorationWithoutClass"
+          name="resetLinkDecorationWithoutClass"
+          :disabled="!options.resetLinkDecoration"
+        >
+          Only without class
+        </RadioOption>
+      </template>
+    </GroupOption>
   </div>
 </template>
