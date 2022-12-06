@@ -1,5 +1,5 @@
 <script setup>
-const basic = ref(false);
+const options = reactive({ basic: false });
 </script>
 
 <template>
@@ -12,14 +12,12 @@ const basic = ref(false);
           id="switch"
           name="switch"
           role="switch"
-          v-model="basic"
+          v-model="options.basic"
         />
         Border reset
       </label>
     </div>
 
-    <template v-if="basic">
-      <code>Something</code>
-    </template>
+    <TheResult :options="options" />
   </div>
 </template>
