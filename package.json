@@ -15,6 +15,7 @@
   "dependencies": {
     "@picocss/pico": "^1.5.6",
     "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
     "sass": "^1.56.1"
   }
 }
