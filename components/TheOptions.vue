@@ -1,5 +1,10 @@
 <script setup lang="ts">
-const props = defineProps(["modelValue"]);
+import Options from "../options.interface";
+
+const props = defineProps<{
+  modelValue: Options;
+}>();
+
 const emit = defineEmits(["update:modelValue"]);
 
 const options = computed({

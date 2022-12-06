@@ -1,7 +1,5 @@
 <script setup lang="ts">
-interface Options {
-  basic: boolean;
-}
+import Options from "../options.interface";
 
 defineProps<{
   options: Options;
