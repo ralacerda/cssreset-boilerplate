@@ -5,19 +5,7 @@ const options = reactive({ basic: false });
 <template>
   <h1>CSS Reset Boiler Plate</h1>
   <div class="grid">
-    <div>
-      <label for="switch">
-        <input
-          type="checkbox"
-          id="switch"
-          name="switch"
-          role="switch"
-          v-model="options.basic"
-        />
-        Border reset
-      </label>
-    </div>
-
+    <TheOptions v-model="options" />
     <TheResult :options="options" />
   </div>
 </template>
