@@ -18,7 +18,23 @@ const options = computed({
 </script>
 
 <template>
-  <RadioOption v-model="options.basic" tooltip="Hello">
-    Basic option
-  </RadioOption>
+  <div>
+    <RadioOption v-model="options.basic" tooltip="Hello" name="basic">
+      Basic option
+    </RadioOption>
+
+    <RadioOption
+      v-model="options.resetLinkDecoration"
+      name="resetLinkDecoration"
+    >
+      Remove anchor tag text decoration
+    </RadioOption>
+
+    <RadioOption
+      v-model="options.resetLinkDecorationWithoutClass"
+      name="resetLinkDecoration"
+    >
+      Only without class
+    </RadioOption>
+  </div>
 </template>

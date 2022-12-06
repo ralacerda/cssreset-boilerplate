@@ -6,7 +6,13 @@ defineProps<{
 }>();
 </script>
 <template>
-  <template v-if="options.basic">
-    <code>Something</code>
-  </template>
+  <code>
+    <template v-if="options.basic"> Something </template>
+    <template v-if="options.resetLinkDecoration">
+      <pre>
+a<template v-if="options.resetLinkDecorationWithoutClass">:not([class])</template> {
+  text-decoration-skip-ink: auto;
+}     </pre>
+    </template>
+  </code>
 </template>

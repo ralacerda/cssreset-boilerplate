@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   modelValue: boolean;
+  name: string;
   tooltip?: string;
 }>();
 const emit = defineEmits(["update:modelValue"]);
@@ -16,11 +17,11 @@ const option = computed({
 </script>
 
 <template>
-  <label for="switch">
+  <label :for="name">
     <input
       type="checkbox"
-      id="switch"
-      name="switch"
+      .id="name"
+      .name="name"
       role="switch"
       v-model="option"
     />
