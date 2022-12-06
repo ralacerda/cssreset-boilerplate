@@ -18,14 +18,7 @@ const options = computed({
 </script>
 
 <template>
-  <label for="switch">
-    <input
-      type="checkbox"
-      id="switch"
-      name="switch"
-      role="switch"
-      v-model="options.basic"
-    />
-    Border reset
-  </label>
+  <RadioOption v-model="options.basic" tooltip="Hello">
+    Basic option
+  </RadioOption>
 </template>
