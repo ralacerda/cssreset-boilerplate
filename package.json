@@ -8,7 +8,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "@iconify/json": "^2.1.148",
+    "nuxt": "3.0.0",
+    "unplugin-icons": "^0.14.14"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.6",
