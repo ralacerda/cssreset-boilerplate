@@ -6,10 +6,12 @@ const options = useOptionsStore();
 
 <template>
   <div>
+    <!-- Basic -->
     <RadioOption v-model="options.basic" tooltip="Hello" name="basic">
       Basic option
     </RadioOption>
 
+    <!-- Reset Link -->
     <GroupOption
       v-model="options.resetLinkDecoration"
       name="resetLinkDecoration"

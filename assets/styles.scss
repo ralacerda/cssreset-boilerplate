@@ -2,3 +2,11 @@
 $semantic-root-element: "#__nuxt" !default;
 
 @import "@picocss/pico/scss/pico";
+
+.grid {
+  --grid-spacing-vertical: 2rem;
+}
+
+label {
+  user-select: none;
+}
