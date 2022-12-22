@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import Options from "../options.interface";
+import { useOptionsStore } from "@/stores/options";
 
-defineProps<{
-  options: Options;
-}>();
+const options = useOptionsStore();
 </script>
 <template>
   <code>

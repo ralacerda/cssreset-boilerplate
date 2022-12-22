@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iconify/json': ^2.1.148
   '@picocss/pico': ^1.5.6
+  '@pinia/nuxt': ^0.4.6
   '@vueuse/core': ^9.6.0
   '@vueuse/nuxt': ^9.6.0
   nuxt: 3.0.0
@@ -11,6 +12,7 @@ specifiers:
 
 dependencies:
   '@picocss/pico': 1.5.6
+  '@pinia/nuxt': 0.4.6
   '@vueuse/core': 9.6.0
   '@vueuse/nuxt': 9.6.0_nuxt@3.0.0
   sass: 1.56.1
@@ -610,6 +612,19 @@ packages:
 
   /@picocss/pico/1.5.6:
     resolution: {integrity: sha512-9R+OdtMuHijKa7AQKBrng/1Q/Cd3BnEigYJXmOxI10Eka2qGGDa4b0hua8UeYu01BTtAiO70K7CQuHffU4YXGA==}
+    dev: false
+
+  /@pinia/nuxt/0.4.6:
+    resolution: {integrity: sha512-HjrYEfLdFpmsjhicPJgL36jVhzHWukIQPFFHGTSF84Cplu+f2nY2XHKqe9ToHzE9rLee2RjLOwAzOnXa/I/u6A==}
+    dependencies:
+      '@nuxt/kit': 3.0.0
+      pinia: 2.0.28
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
     dev: false
 
   /@rollup/plugin-alias/4.0.2_rollup@2.79.1:
@@ -2989,6 +3004,22 @@ packages:
   /pify/2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
+
+  /pinia/2.0.28:
+    resolution: {integrity: sha512-YClq9DkqCblq9rlyUual7ezMu/iICWdBtfJrDt4oWU9Zxpijyz7xB2xTwx57DaBQ96UGvvTMORzALr+iO5PVMw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.4.5
+      vue-demi: 0.13.11
+    dev: false
 
   /pkg-types/1.0.1:
     resolution: {integrity: sha512-jHv9HB+Ho7dj6ItwppRDDl0iZRYBD0jsakHXtFgoLr+cHSF6xC+QL54sJmWxyGxOLYSHm0afhXhXcQDQqH9z8g==}

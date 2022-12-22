@@ -1,20 +1,7 @@
 <script setup lang="ts">
-import Options from "../options.interface";
+import { useOptionsStore } from "@/stores/options";
 
-const props = defineProps<{
-  modelValue: Options;
-}>();
-
-const emit = defineEmits(["update:modelValue"]);
-
-const options = computed({
-  get() {
-    return props.modelValue;
-  },
-  set(value) {
-    emit("update:modelValue", value);
-  },
-});
+const options = useOptionsStore();
 </script>
 
 <template>
