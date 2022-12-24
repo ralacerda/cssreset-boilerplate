@@ -4,4 +4,9 @@ export default defineNuxtConfig({
   modules: ["unplugin-icons/nuxt", "@vueuse/nuxt", "@pinia/nuxt"],
   ssr: false,
   vue: { compilerOptions: { whitespace: "preserve" } },
+  app: {
+    head: {
+      title: "CSS Boilerplates",
+    },
+  },
 });
